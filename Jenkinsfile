@@ -7,7 +7,7 @@ pipeline{
    stages{
      stage("git clone"){
         steps{
-           git url : "https://github.com/narendragit05/Myjenkins.git"
+           git url : "https://github.com/narendragit05/war-web-project.git"
         }
      }
 

@@ -1,10 +1,10 @@
 pipeline{
- agents any
-   environment{
+ agent any
+ environment{
       PATH= "/opt/maven/bin:$PATH"
-   }
+ }
 
-   stages{
+  stages{
      stage("git clone"){
         steps{
            git url : "https://github.com/narendragit05/war-web-project.git"
@@ -15,6 +15,6 @@ pipeline{
        steps{
          sh 'mvn clean package'
        }
-      }
-    }
+     }
+  }
 }
